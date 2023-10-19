@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Manrope:wght@800&family=Outfit:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:hsl(218, 23%, 16%);
+    font-family: manrope;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+p{
+    font-size: 28px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+h5{
+    color: hsl(150, 100%, 66%);
+    padding: 10px;
+    letter-spacing: 5px;
+}
+div.advice{
+    padding: 25px;
+    text-align: center;
+    width: 600px;
+    color: hsl(193, 38%, 86%);
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 20px;
+    position: relative;
+}
+#dice{
+    position: absolute;
+    top: 92%;
+    left: 46%;
+    background-color: #52ffa8;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    border-style: none;
+}
+#dice:hover{
+	box-shadow: 0px 0px 5px #52ffa8,
+				0px 0px 25px #52ffa8,
+				0px 0px 50px #52ffa8,
+				0px 0px 200px #52ffa8;
+    cursor: pointer;
+}
+
+.divider{
+    padding-bottom: 80px;
+    background-image: url(images/pattern-divider-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 375px){
+
+    p{
+        font-size: 25px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    h5{
+        color: hsl(150, 100%, 66%);
+        padding: 10px;
+        letter-spacing: 5px;
+    }
+    div.advice{
+        margin-top: 150px;
+        padding: 25px;
+        text-align: center;
+        width: 300px;
+        color: hsl(193, 38%, 86%);
+        background-color: hsl(217, 19%, 24%);
+        border-radius: 20px;
+        position: relative;
+    }
+
+    #dice{
+        position: absolute;
+        top: 95%;
+        left: 42%;
+        background-color: #52ffa8;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 12px;
+    }
+
+    .divider{
+        background-image: url(images/pattern-divider-mobile.svg);
+    }
+}
+
